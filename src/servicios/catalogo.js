@@ -16,4 +16,10 @@ export default {
   postInsertarTipoFunda(data) {
     return cliente.post(`fundasTipos/crearTipoFunda`, data);
   },
+  postObtenerProductos(data){
+    return cliente.post(`productos/BuscarClave`, data);
+  },
+  postInsertarVenta(data){
+    return cliente.post(`ventas/insertarDetalleVenta`, data);
+  }
 };
